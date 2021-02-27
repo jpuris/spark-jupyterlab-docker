@@ -36,14 +36,13 @@ jupyter-lab: cluster-base
 	-t jupyter-lab .
 
 run:
-	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml up -d
+	docker-compose up -d
 
 stop:
-	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml down
+	docker-compose down
 
-cleanup:
-	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml down
-	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml rm
+cleanup: stop
+	docker-compose rm
 	docker image rm spark-worker
 	docker image rm spark-master
 	docker image rm jupyter-lab

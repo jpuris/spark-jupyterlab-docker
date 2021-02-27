@@ -39,13 +39,18 @@ make stop
 make cleanup -i
 ```
 
+## Container logs
+You can see all component console outputs with `docker-compose logs -f -t`
+
 ## Component web user interfaces
 Component | Web UI URL
 --- | ---
 JupyterLab | http://localhost:8888
+JupyterLab spark app* | http://localhost:4040
 Spark master | http://localhost:8080
 Spark worker 1 | http://localhost:8081
 Spark worker 2 | http://localhost:8082
+*Only applies after spark context has been created
 
 ## Sample notebook
 See [sample.ipynb](shared-workspace/sample.ipynb)

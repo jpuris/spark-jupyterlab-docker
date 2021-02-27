@@ -49,6 +49,6 @@ cleanup:
 	docker image rm jupyter-lab
 	docker image rm spark-base
 	docker image rm cluster-base
-	docker image rm 8-jre-slim
+	docker image rm openjdk:8-jre-slim
 
 default: spark-base spark-master spark-worker jupyter-lab

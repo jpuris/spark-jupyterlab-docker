@@ -5,6 +5,14 @@ Distributed spark cluster with jupyter labs on docker.
 - Spark worker 2x
 - Jupyter Lab
 
+### Versions
+Component | Version
+--- | ---
+JupyterLab | 3.0.9
+Spark | 3.0.2
+Hadoop | 3.2
+JRE | 8
+
 ## Requirements
 - Docker
 - Docker compose (version 3 or newer)

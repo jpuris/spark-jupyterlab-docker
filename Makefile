@@ -4,7 +4,7 @@ SPARK_VERSION      = 3.0.2
 HADOOP_VERSION     = 3.2
 JUPYTERLAB_VERSION = 3.0.9
 
-MANIFEST_DIR = dockerfiles
+MANIFEST_DIR = docker
 
 cluster-base:
 	docker build \
@@ -36,6 +36,6 @@ jupyter-lab: cluster-base
 	-t jupyter-lab .
 
 run:
-	docker-compose up
+	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml up
 
 default: spark-base spark-master spark-worker jupyter-lab

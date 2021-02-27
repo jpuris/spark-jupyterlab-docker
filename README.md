@@ -28,7 +28,7 @@ Spark worker 1 | http://localhost:8081
 Spark worker 2 | http://localhost:8082
 
 ## Sample notebook
-See [sample.ipynb](sample.ipynb)
+See [sample.ipynb](shared-workspace/sample.ipynb)
 
 ## Todo's
 See [TODO.md](TODO.md)

@@ -11,12 +11,12 @@ Distributed spark cluster with jupyter labs on docker.
 
 ## Build
 ```sh
-chmod +x build.sh && bash build.sh
+make
 ```
 
 ## Run
 ```sh
-docker-compose up
+make run
 ```
 
 ## Component web user interfaces

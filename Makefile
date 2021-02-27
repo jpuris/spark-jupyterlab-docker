@@ -36,6 +36,19 @@ jupyter-lab: cluster-base
 	-t jupyter-lab .
 
 run:
-	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml up
+	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml up -d
+
+stop:
+	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml down
+
+cleanup:
+	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml down
+	docker-compose -f ${MANIFEST_DIR}/docker-compose.yml rm
+	docker image rm spark-worker
+	docker image rm spark-master
+	docker image rm jupyter-lab
+	docker image rm spark-base
+	docker image rm cluster-base
+	docker image rm 8-jre-slim
 
 default: spark-base spark-master spark-worker jupyter-lab

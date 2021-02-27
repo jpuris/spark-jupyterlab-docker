@@ -11,12 +11,24 @@ Distributed spark cluster with jupyter labs on docker.
 
 ## Build
 ```sh
+# Builds the necessary stack images
 make
 ```
 
 ## Run
 ```sh
+# Bootstraps the stack
 make run
+```
+
+## Stop and cleanup
+```sh
+# Shuts down the stack and removes the containers
+make stop
+
+# Make sure the stack is shut down
+# Removes all of the stack images
+make cleanup -i
 ```
 
 ## Component web user interfaces

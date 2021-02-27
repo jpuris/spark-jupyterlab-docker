@@ -1,7 +1,7 @@
 FROM cluster-base
 
-ARG spark_version=3.0.0
-ARG hadoop_version=2.7
+ARG spark_version=3.0.2
+ARG hadoop_version=3.2
 
 RUN apt-get update -y && \
     apt-get install -y curl && \

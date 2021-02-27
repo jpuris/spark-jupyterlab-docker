@@ -2,17 +2,17 @@
 
 ## Repository
 
-- [ ] Reorganise the repository
+- [x] Reorganise the repository
 - [ ] Add infrastructure diagrams and description
 
 ## Docker
 
-- [ ] Simplify the build process
+- [x] Simplify the build process
 - [ ] Make ENV vars simpler to use
-- [ ] Revamp build.sh, possibly use Makefile
+- [x] Revamp build.sh, possibly use Makefile
 
 ## Components
 
-- [ ] Update to the newest versions of the components
+- [x] Update to the newest versions of the components
 - [ ] Add spark history server
-- [ ] Make the docker volume (Pretend HDFS) exposed to host system
+- [x] Make the docker volume (Pretend HDFS) exposed to host system

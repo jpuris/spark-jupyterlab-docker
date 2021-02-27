@@ -50,6 +50,7 @@ JupyterLab spark app* | http://localhost:4040
 Spark master | http://localhost:8080
 Spark worker 1 | http://localhost:8081
 Spark worker 2 | http://localhost:8082
+
 *Only applies after spark context has been created
 
 ## Sample notebook

@@ -7,6 +7,7 @@ RUN mkdir -p ${shared_workspace} && \
     apt-get update -y && \
     apt-get install -y python3 && \
     ln -s /usr/bin/python3 /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip && \
     rm -rf /var/lib/apt/lists/*
 
 ENV SHARED_WORKSPACE=${shared_workspace}

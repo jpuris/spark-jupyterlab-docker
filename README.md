@@ -9,9 +9,12 @@ Distributed spark cluster with jupyter labs on docker.
 Component | Version
 --- | ---
 JupyterLab | 3.0.9
-Spark | 3.0.2
-Hadoop | 3.2
+Spark | 2.4.7
+Hadoop | 2.7
 JRE | 8
+
+One can change the versions deployed by editing [Makefile](Makefile)
+Spark packages are downloaded from https://archive.apache.org/dist/spark/
 
 ## Requirements
 - Docker

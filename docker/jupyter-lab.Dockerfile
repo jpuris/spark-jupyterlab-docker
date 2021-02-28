@@ -1,6 +1,6 @@
 FROM cluster-base
 
-ARG spark_version=3.0.2
+ARG spark_version=2.4.7
 ARG jupyterlab_version=3.0.9
 
 RUN apt-get update -y && \

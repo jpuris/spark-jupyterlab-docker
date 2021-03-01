@@ -1,3 +1,2 @@
 shared-workspace/*
 !shared-workspace/sample.ipynb
-.DS_Store

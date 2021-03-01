@@ -60,7 +60,10 @@ Spark worker 2 | http://localhost:8082
 See [sample.ipynb](shared-workspace/sample.ipynb)
 
 ## Todo's
-See [TODO.md](TODO.md)
+See [TODO.md](docs/TODO.md)
+
+## Known issues
+See [known_issues.md](docs/known_issues.md)
 
 ## Dislaimer
 This is a very early version of the contents in the repo
